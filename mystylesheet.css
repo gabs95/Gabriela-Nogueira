@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.load {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.background {
+    background-color:black;
+    height: 100vh;
+    width: 100%; 
+}
+
+.title {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Barlow; 
+    font-size: 20px;
+    font-weight: 400;
+    color: aliceblue;
+    top: 40vh;
+    width: 100%;
+    animation: fadeIn 2s;
+}
+
+
+.text {
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    font-family: Source Code Pro, monospace;
+    font-weight: 300;
+    font-size: 60px;
+    color: aliceblue, transparent (0.3);
+    animation: fadeIn 4s;
+}
+
+.nav-link {
+    color: aliceblue;
+    top: 100vh;
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: barlow;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.container{
+    max-width: 1200px;
+}
+.container h2 .name, .container h2 .cidade, .container h2 .university, .container h2 .work1, .container h2 .work2 {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.container img {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+    display: none;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+     to{
+         opacity: 1;
+     }
+}
